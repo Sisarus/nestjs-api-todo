@@ -11,11 +11,11 @@ datasource db {
 }
 
 model User {
-  id       Int      @id @default(autoincrement())
-  email        String   @unique
-  passwordHash String
-  createdAt    DateTime @default(now())
-  updatedAt    DateTime @updatedAt
+  id        Int      @id @default(autoincrement())
+  email     String   @unique
+  password  String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 
   todos Todo[]
 }
@@ -26,7 +26,7 @@ model Todo {
   description String?
 
   userId Int
-  user User @relation(fields: [userId], references: [id])
+  user   User @relation(fields: [userId], references: [id])
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
