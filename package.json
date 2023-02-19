@@ -1,8 +1,8 @@
 {
   "name": "nestjs-todo-api",
   "version": "0.0.1",
-  "description": "",
-  "author": "",
+  "description": "Nestjs API for todo",
+  "author": "Alisa Luomanmäki",
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
