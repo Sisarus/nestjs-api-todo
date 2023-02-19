@@ -1,13 +1,13 @@
 import { PrismaService } from "src/prisma/prisma.service";
-import { Injectable } from '@nestjs/common';
-import { User } from '@prisma/client';
+import { ForbiddenException, Injectable } from '@nestjs/common';
+import { Prisma, User } from '@prisma/client';
 import { TodoDto } from './dto';
 
 @Injectable()
 export class TodoService {
   constructor(private prisma: PrismaService,){}
 
-  async todo(dto: TodoDto, user: User){
+  async addTodo(dto: TodoDto, user: User){
     //add data to db
     try {
       const todo = await this.prisma.todo.create({
@@ -22,6 +22,26 @@ export class TodoService {
     } catch(error) {
       throw error;
     }
-    
+  }
+
+  async deleteTodo(id: string){
+
+    try{
+      const todoId = Number(id);
+      const todo = await this.prisma.todo.delete({
+        where:{
+          id: todoId
+        }
+      })
+    } catch(error) {
+      if(error instanceof Prisma.PrismaClientKnownRequestError) {
+        if (error.code == 'P2025') {
+          throw new ForbiddenException('Todo is not in Database');
+        }
+      }
+      throw error;
+    }
+
+    return {message: 'removed ' + id};
   }
 }

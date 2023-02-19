@@ -1,4 +1,4 @@
-import { Body, Controller, Get, Post, UseGuards } from '@nestjs/common';
+import { Body, Controller, Delete, Get, Param, Post, UseGuards } from '@nestjs/common';
 import { AuthGuard } from "@nestjs/passport";
 import { User } from '@prisma/client';
 import { TodoDto } from './dto';
@@ -12,7 +12,7 @@ export class TodoController {
 
   @Post('todos')
   todos(@Body() dto: TodoDto, @GetUser() user: User){
-    return this.todoService.todo(dto, user);
+    return this.todoService.addTodo(dto, user);
   }
 
   // @Get('todo')
@@ -20,5 +20,8 @@ export class TodoController {
   //   return 'Todo-list';
   // }
   
-  
+  @Delete('todos/:id')
+  async deletePost(@Param('id') id: string) {
+    return this.todoService.deleteTodo(id);
+  }
 }
