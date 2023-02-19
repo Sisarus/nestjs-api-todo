@@ -6,7 +6,4 @@ export class TodoDto {
   name: string
 
   description: string
-
-  @IsNotEmpty()
-  status: string
 }
