@@ -1,16 +1,13 @@
-import { Controller, Post } from "@nestjs/common/decorators";
+import { Body, Controller, Put } from "@nestjs/common";
+import { PasswordDto } from "./dto";
+import { UserService } from "./user.service";
 
 @Controller('api/v1')
 export class UserController {
-  constructor(){}
+  constructor(private userService: UserService){}
 
-  // @Post('signup')
-  // signup() {
-  //   return 'i';
-  // }
-
-  // @Post('signin')
-  // signin(){
-  //   return 'i';
-  // }
+  @Put('changePassword')
+  changePassword(@Body() dto: PasswordDto) {
+    return this.userService.changePassword(dto);
+  }
 }
