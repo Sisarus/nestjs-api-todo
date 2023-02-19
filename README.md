@@ -1,13 +1,9 @@
 
 ## Running the app
 
-```bash
-# development
-$ yarn run start
-
-# watch mode
-$ yarn run start:dev
-
-# production mode
-$ yarn run start:prod
+### Run the API in development mode
+```javascript
+yarn // install
+yarn db:dev:restart // start postgres in docker and push migrations
+yarn start:dev // start api in dev mode
 ```
