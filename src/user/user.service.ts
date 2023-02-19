@@ -6,5 +6,4 @@ export class UserService {
   changePassword(dto: PasswordDto){
     return 'Muutos onnistui ' + dto.password;
   }
-
 }
