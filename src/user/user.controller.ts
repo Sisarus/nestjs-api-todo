@@ -1,4 +1,4 @@
-import {Controller, Put, UseGuards } from "@nestjs/common";
+import {Body, Controller, Put, UseGuards } from "@nestjs/common";
 import { JwtGuard } from "src/auth/guard";
 import { PasswordDto } from "./dto";
 import { UserService } from "./user.service";
@@ -12,7 +12,8 @@ export class UserController {
 
 
   @Put('changePassword')
-  changePassword(dto: PasswordDto, @GetUser() user: User ) {
+  async changePassword(@Body() dto: PasswordDto, @GetUser() user: User ) {
+    console.log(dto);
     return this.userService.changePassword(dto, user);
   }
 }

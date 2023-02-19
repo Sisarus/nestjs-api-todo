@@ -9,7 +9,6 @@ export class UserService {
   constructor(private prisma: PrismaService,){}
 
   async changePassword(dto: PasswordDto, user: User){
-
     //get old password
     const userDB = await this.prisma.user.findUnique({
         where: {
@@ -20,6 +19,7 @@ export class UserService {
     //compare old password
     const pwMatches = await argon.verify(userDB.password, dto.oldPassword);
     //throw exception if false
+    console.log("he");
     if(!pwMatches) throw new ForbiddenException('old password incorrect');
 
     const hashPassword = await argon.hash(dto.newPassword);
@@ -31,7 +31,7 @@ export class UserService {
           password: hashPassword
         },
       })
-      return {message: 'Updated password'};
+      return {message: 'Updated password successfully'};
     } catch(error) {
       throw error;
     }
