@@ -13,7 +13,7 @@ yarn db:dev:restart // start postgres in docker and push migrations
 yarn start:dev // start api in dev mode
 ```
 
-Run prisma to see Database
+### Run prisma to see Database
 ```
 npx prisma start
 ```
@@ -22,7 +22,7 @@ Signup and signin do not need JWT Token. When using signup or signin and everyth
 Others will nees this as header:
 Authorization  Bearer [JWT.token]
 
-## Addresses for data
+#### Addresses for data
 - **POST** */api/v1/signup*: Sign up as an user of the system, using email & password
 - **POST** */api/v1/signin*: Sign in using email & password. The system will return the JWT token that can be used to call the APIs that follow
 - **PUT** */api/v1/changePassword*: Change user’s password
