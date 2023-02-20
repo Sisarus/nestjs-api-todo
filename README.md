@@ -3,7 +3,8 @@
 
 
 Docker will run port - 5434:5432
-
+Runs in:
+http://localhost:3333/
 
 ### Run the API in development mode
 ```javascript
@@ -17,14 +18,11 @@ Run prisma to see Database
 npx prisma start
 ```
 
-Runs in:
-http://localhost:3333/
-
 Signup and signin do not need JWT Token. When using signup or signin and everything goes right, back will give JWT Token that last 14m.
 Others will nees this as header:
 Authorization  Bearer [JWT.token]
 
-
+## Addresses for data
 - **POST** */api/v1/signup*: Sign up as an user of the system, using email & password
 - **POST** */api/v1/signin*: Sign in using email & password. The system will return the JWT token that can be used to call the APIs that follow
 - **PUT** */api/v1/changePassword*: Change user’s password
