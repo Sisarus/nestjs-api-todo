@@ -19,7 +19,6 @@ export class UserService {
     //compare old password
     const pwMatches = await argon.verify(userDB.password, dto.oldPassword);
     //throw exception if false
-    console.log("he");
     if(!pwMatches) throw new ForbiddenException('old password incorrect');
 
     const hashPassword = await argon.hash(dto.newPassword);

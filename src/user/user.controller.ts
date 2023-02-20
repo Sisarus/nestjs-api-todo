@@ -13,7 +13,7 @@ export class UserController {
 
   @Put('changePassword')
   async changePassword(@Body() dto: PasswordDto, @GetUser() user: User ) {
-    console.log(dto);
+
     return this.userService.changePassword(dto, user);
   }
 }

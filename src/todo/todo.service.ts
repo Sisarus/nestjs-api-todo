@@ -64,8 +64,6 @@ export class TodoService {
       // Deny if owner false
       if(todoRightOwner == null) throw new ForbiddenException('Permission denied');
 
-      console.log(dto.description);
-
       const todo = await this.prisma.todo.update({
         where:{
           id: todoId
