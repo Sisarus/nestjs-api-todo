@@ -20,7 +20,7 @@ npx prisma start
 Runs in:
 http://localhost:3333/
 
-Signup and signin do not need JWT Token. When using signup or signin and everything goes right back will give JWT Token that last 14m.
+Signup and signin do not need JWT Token. When using signup or signin and everything goes right, back will give JWT Token that last 14m.
 Others will nees this as header:
 Authorization  Bearer [JWT.token]
 
