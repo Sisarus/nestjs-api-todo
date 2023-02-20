@@ -11,5 +11,6 @@ export class TodoDto {
 
   @IsEnum(Status)
   @IsString()
+  @IsNotEmpty()
   status: Status
 }
