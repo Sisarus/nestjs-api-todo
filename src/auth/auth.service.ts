@@ -23,7 +23,7 @@ export class AuthService {
     });
 
     //return jwt-token
-    return this.signToken(user.id, user.email);
+    return {message: "Successfully created new account"};
     } catch(error) {
       if(error instanceof Prisma.PrismaClientKnownRequestError) {
         if (error.code == 'P2002') {
