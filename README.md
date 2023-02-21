@@ -18,9 +18,8 @@ yarn start:dev // start api in dev mode
 npx prisma start
 ```
 
-Signup and signin do not need JWT Token. When using signin and everything goes right, back will return JWT Token that last 15m. Chance token lastin time from: src/auth/auth.service.ts  and row 68 
-Others will nees this as header:
-Authorization Bearer [JWT.token]
+Signup and signin do not need JWT Token. When using signin and everything goes right, back will return JWT Token that last 15m. Chance token lasting time from: src/auth/auth.service.ts -> row 68. 
+Others calls will need this as header "Authorization Bearer AUTH_TOKEN"
 
 #### Addresses for data
 - **POST** */api/v1/signup*: Sign up as an user of the system, using email & password
