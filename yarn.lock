@@ -4981,7 +4981,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"expand-pkg@npm:0.1.9":
+"expand-pkg@npm:0.1.9, expand-pkg@npm:^0.1.8":
   version: 0.1.9
   resolution: "expand-pkg@npm:0.1.9"
   dependencies:
