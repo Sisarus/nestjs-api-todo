@@ -5,13 +5,16 @@
 ```
 yarn
 ```
+### Start postgres in docker and push migrations
+```
+yarn db:dev:restart
+```
 ### Run prisma to see Database
 ```
 npx prisma start
 ```
-### Open new terminal. start postgres in docker and push migrations, start api in dev mode:
+### Open new terminal. start api in dev mode:
 ```
-yarn db:dev:restart
 yarn start:dev
 ```
 
