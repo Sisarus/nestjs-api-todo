@@ -11987,16 +11987,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"yargs-parser@npm:^2.4.0, yargs-parser@npm:^2.4.1":
-  version: 2.4.1
-  resolution: "yargs-parser@npm:2.4.1"
-  dependencies:
-    camelcase: ^3.0.0
-    lodash.assign: ^4.0.6
-  checksum: f57946a93a9e0986fccbc7999a3fc8179d4693e4551ef0ace3d599c38ec004a3783efb9eed9fa5d738b30db1cfa1d3a07f4dd6ae060cfce6fe61c3ae7b7a347b
-  languageName: node
-  linkType: hard
-
 "yargs@npm:^17.3.1":
   version: 17.7.0
   resolution: "yargs@npm:17.7.0"
