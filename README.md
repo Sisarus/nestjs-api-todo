@@ -1,16 +1,10 @@
 
 ## Running the app
 
-
-Docker will run port - 5434:5432
-Runs in:
-http://localhost:3333/
-
 ### Install project
 ```
 yarn
 ```
-
 ### Run prisma to see Database
 ```
 npx prisma start
@@ -21,8 +15,13 @@ yarn db:dev:restart
 yarn start:dev
 ```
 
+* Docker will run port - 5434:5432
+* Runs in: http://localhost:3333/
+
 Signup and signin do not need JWT Token. When using signin and everything goes right, back will return JWT Token that last 15m. Chance token lasting time from: src/auth/auth.service.ts -> row 68. 
 Others calls will need this as header "Authorization Bearer AUTH_TOKEN"
+
+Use Postgress or Insomnia
 
 #### Addresses for data
 - **POST** */api/v1/signup*: Sign up as an user of the system, using email & password
