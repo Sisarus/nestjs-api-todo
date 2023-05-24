@@ -43,8 +43,7 @@
     "rxjs": "^7.2.0",
     "set-value": "latest",
     "update": "^0.7.4",
-    "webpack": "5.83.1",
-    "yargs-parser": "21.1.1"
+    "webpack": "5.83.1"
   },
   "devDependencies": {
     "@nestjs/cli": "9.4.2",
