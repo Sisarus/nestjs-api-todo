@@ -8730,6 +8730,7 @@ __metadata:
     typescript: ^4.7.4
     update: ^0.7.4
     webpack: 5.83.1
+    yargs-parser: 21.1.1
   languageName: unknown
   linkType: soft
 
