@@ -8720,7 +8720,7 @@ __metadata:
     prisma: ^4.10.1
     reflect-metadata: ^0.1.13
     rxjs: ^7.2.0
-    set-value: latest
+    set-value: 4.1.0
     source-map-support: ^0.5.20
     supertest: ^6.1.3
     ts-jest: 29.0.3
@@ -10355,61 +10355,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"set-value@npm:^0.2.0":
-  version: 0.2.0
-  resolution: "set-value@npm:0.2.0"
-  dependencies:
-    isobject: ^1.0.0
-    noncharacters: ^1.1.0
-  checksum: 375880a54382f5f54e440edd20d4cc60a937464cc8a4c867e613f969cc7d01b7e3d28376db248bb9bd69ea3437976e92e2b146cb8ccb313e66136fd1fd4147e0
-  languageName: node
-  linkType: hard
-
-"set-value@npm:^0.3.3":
-  version: 0.3.3
-  resolution: "set-value@npm:0.3.3"
-  dependencies:
-    extend-shallow: ^2.0.1
-    isobject: ^2.0.0
-    to-object-path: ^0.2.0
-  checksum: 00f7c9eb9956cd1f755eb779a90b0beba670ffa3cd996d67f9ad27383527de48d21ce7052f6c6612be8dd6113ce81ed76bffc04225a25bfcab2613d15b17cd14
-  languageName: node
-  linkType: hard
-
-"set-value@npm:^0.4.0, set-value@npm:^0.4.2, set-value@npm:^0.4.3":
-  version: 0.4.3
-  resolution: "set-value@npm:0.4.3"
-  dependencies:
-    extend-shallow: ^2.0.1
-    is-extendable: ^0.1.1
-    is-plain-object: ^2.0.1
-    to-object-path: ^0.3.0
-  checksum: 0fdc194489d9182322cafbe71d7606e6f96bdbb7b8e459d8b749e57699a87857afa4a00683ab4cede03dbbd857f9282998c2661e8c13a98a6caf2be58f773965
-  languageName: node
-  linkType: hard
-
-"set-value@npm:^2.0.0, set-value@npm:^2.0.1":
-  version: 2.0.1
-  resolution: "set-value@npm:2.0.1"
-  dependencies:
-    extend-shallow: ^2.0.1
-    is-extendable: ^0.1.1
-    is-plain-object: ^2.0.3
-    split-string: ^3.0.1
-  checksum: 09a4bc72c94641aeae950eb60dc2755943b863780fcc32e441eda964b64df5e3f50603d5ebdd33394ede722528bd55ed43aae26e9df469b4d32e2292b427b601
-  languageName: node
-  linkType: hard
-
-"set-value@npm:^3.0.1":
-  version: 3.0.3
-  resolution: "set-value@npm:3.0.3"
-  dependencies:
-    is-plain-object: ^2.0.4
-  checksum: 1c96d7570d3d9e602bcb690d183787db104d7f202fc005c0cb90884b754f905881a848b4a52b31d12a06e55933cecb234c10a3ca2dc0c7a9daede3f211161086
-  languageName: node
-  linkType: hard
-
-"set-value@npm:latest":
+"set-value@npm:4.1.0":
   version: 4.1.0
   resolution: "set-value@npm:4.1.0"
   dependencies:
@@ -12062,10 +12008,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"yargs-parser@npm:^21.1.1":
+"yargs-parser@npm:21.1.1, yargs-parser@npm:^21.0.1, yargs-parser@npm:^21.1.1":
   version: 21.1.1
   resolution: "yargs-parser@npm:21.1.1"
   checksum: ed2d96a616a9e3e1cc7d204c62ecc61f7aaab633dcbfab2c6df50f7f87b393993fe6640d017759fe112d0cb1e0119f2b4150a87305cc873fd90831c6a58ccf1c
+  languageName: node
+  linkType: hard
+
+"yargs-parser@npm:^2.4.0, yargs-parser@npm:^2.4.1":
+  version: 2.4.1
+  resolution: "yargs-parser@npm:2.4.1"
+  dependencies:
+    camelcase: ^3.0.0
+    lodash.assign: ^4.0.6
+  checksum: f57946a93a9e0986fccbc7999a3fc8179d4693e4551ef0ace3d599c38ec004a3783efb9eed9fa5d738b30db1cfa1d3a07f4dd6ae060cfce6fe61c3ae7b7a347b
   languageName: node
   linkType: hard
 
