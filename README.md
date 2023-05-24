@@ -6,16 +6,19 @@ Docker will run port - 5434:5432
 Runs in:
 http://localhost:3333/
 
-### Run the API in development mode
+### Install project
 ```javascript
 yarn // install
-yarn db:dev:restart // start postgres in docker and push migrations
-yarn start:dev // start api in dev mode
 ```
 
 ### Run prisma to see Database
 ```
 npx prisma start
+```
+### Open new terminal:
+```
+yarn db:dev:restart // start postgres in docker and push migrations
+yarn start:dev // start api in dev mode
 ```
 
 Signup and signin do not need JWT Token. When using signin and everything goes right, back will return JWT Token that last 15m. Chance token lasting time from: src/auth/auth.service.ts -> row 68. 
