@@ -3508,23 +3508,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"braces@npm:2.3.1":
-  version: 2.3.1
-  resolution: "braces@npm:2.3.1"
+"braces@npm:2.3.2":
+  version: 2.3.2
+  resolution: "braces@npm:2.3.2"
   dependencies:
     arr-flatten: ^1.1.0
     array-unique: ^0.3.2
-    define-property: ^1.0.0
     extend-shallow: ^2.0.1
     fill-range: ^4.0.0
     isobject: ^3.0.1
-    kind-of: ^6.0.2
     repeat-element: ^1.1.2
     snapdragon: ^0.8.1
     snapdragon-node: ^2.0.1
     split-string: ^3.0.2
     to-regex: ^3.0.1
-  checksum: 6e58dccca17c3a622d9745fe623a753bb576c51f9b72106fbb922e6214cb95086980a1ccbe5f49cf4615bc742d3e091c1670f1ea7bd8fea6fe8fc0628ebedae7
+  checksum: e30dcb6aaf4a31c8df17d848aa283a65699782f75ad61ae93ec25c9729c66cf58e66f0000a9fec84e4add1135bb7da40f7cb9601b36bebcfa9ca58e8d5c07de0
   languageName: node
   linkType: hard
 
@@ -8899,7 +8897,7 @@ __metadata:
     "@typescript-eslint/eslint-plugin": ^5.0.0
     "@typescript-eslint/parser": ^5.0.0
     argon2: ^0.30.3
-    braces: 2.3.1
+    braces: 2.3.2
     class-transformer: ^0.5.1
     class-validator: ^0.14.0
     eslint: ^8.0.1
