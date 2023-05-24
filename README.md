@@ -7,18 +7,18 @@ Runs in:
 http://localhost:3333/
 
 ### Install project
-```javascript
-yarn // install
+```
+yarn
 ```
 
 ### Run prisma to see Database
 ```
 npx prisma start
 ```
-### Open new terminal:
+### Open new terminal. start postgres in docker and push migrations, start api in dev mode:
 ```
-yarn db:dev:restart // start postgres in docker and push migrations
-yarn start:dev // start api in dev mode
+yarn db:dev:restart
+yarn start:dev
 ```
 
 Signup and signin do not need JWT Token. When using signin and everything goes right, back will return JWT Token that last 15m. Chance token lasting time from: src/auth/auth.service.ts -> row 68. 
