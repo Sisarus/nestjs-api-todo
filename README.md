@@ -11,7 +11,7 @@ yarn db:dev:restart
 ```
 ### Run prisma to see Database
 ```
-npx prisma start
+npx prisma studio
 ```
 ### Open new terminal. start api in dev mode:
 ```
